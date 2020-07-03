@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<title>The Yaar Joint</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+@font-face{
+	font-family: Eutemia ;
+   src: url('abc.tff');
+}
+.icon-bar {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  overflow: auto;
+}
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+}
+.icon-bar a:hover {
+  background-color: rgb(255, 115, 0);
+}
+/*icons*/
+.titlee
+{
+	
+	font-family: cursive ;
+	background-color: rgb(0, 0, 0);
+	text-align:center;
+	color:white;
+	margin: 0%;
+	font-size: 70px;
+	line-height: 150px;
+	position:relative;
+	
+	
+}
+.titlee2
+{
+	
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(0, 0, 0);
+	text-align:center;
+	color:white;
+	margin: 0%;
+	font-size: 50px;
+	line-height: 100px;
+	position:relative;
+	font-family: cursive;
+	
+}
+.titlee3
+{
+	
+	font-family:'Times New Roman', Times, serif;
+	background-color: rgb(0, 0, 0);
+	text-align:center;
+	color:white;
+	margin: 0%;
+	font-size: 70px;
+	line-height: 100px;
+	position:relative;
+	font-family: cursive;
+	
+}
+.titlee4
+{
+	
+	font-family:'Times New Roman', Times, serif;
+	background-color: rgb(0, 0, 0);
+	text-align:center;
+	color:white;
+	margin: 0%;
+	font-size: 20px;
+	line-height: 40px;
+	position:relative;
+	font-family: cursive;
+	
+}
+
+body, html {
+  height: 100%;
+}
+/*BACKGROUND*/
+.parallax {
+  background-image: url('background.jpg');
+  height: 70%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax2 {
+  background-image: url('hookah.jpg');
+  height: 70%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3 {
+  background-image: url('https://wallpaperplay.com/walls/full/e/f/1/76928.jpg');
+  height: 70%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cursv{
+	font-family: cursive;
+	text-align: center;
+	margin:0%;
+	background-color: rgb(0, 0, 0);
+	color: white;
+  line-height: 100px;
+
+}
+.cursv2{
+	font-family: cursive;
+	text-align: center;
+	margin:0%;
+	background-color: rgb(255, 115, 0);
+	color: black;
+	padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+/*split starts*/
+.splitright {
+  height: 50%;
+  width: 50%;
+  position: relative;
+ 
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+  right: 0;
+  background-color: rgb(255, 115, 0);
+  margin-left: 50%;
+  margin-top: -26.8%;
+}
+.splitleft {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+  left: 0;
+  background-color:rgb(255,115,0);
+  margin-right:50% ;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 300px;
+  border-radius: 50%;
+}
+/*...................................................................................................................................................*/
+.splitleft2 {
+  height: 50%;
+  width: 33.333333%;
+  position: relative;
+  overflow-x: hidden;
+  left: 0;
+  background-color:rgb(255,115,0);
+  margin-right: 33.333333%;
+  }
+.splitmid2 {
+  height: 50%;
+  width: 33.333333%;
+  position: relative;
+  overflow-x: hidden;
+  right: 0;
+  background-color: rgb(255, 115, 0);
+  margin-left: 33.333333%;
+  margin-top: -25.75%;
+}
+.splitright2 {
+  height: 50%;
+  width: 33.333333%;
+  position: relative;
+  overflow-x: hidden;
+  right: 0;
+  background-color: rgb(255, 115, 0);
+  margin-left: 66.666666%;
+  margin-top: -26.75%;
+ 
+}
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container1:hover .image {
+  opacity: 0.3;
+}
+.container1:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.baak{
+  background-image: linear-gradient(black,rgb(255,115,0));
+  margin-left: 0%;
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body> 
+<div class="icon-bar">
+  <a href="#"><i class="fa fa-home"> Home</i></a> 
+  <a href="#"><i class="fa fa-clipboard"> Menu</i></a> 
+  <a href="#"><i class="fa fa-envelope"> Reservations</i></a> 
+  <a href="#"><i class="fa fa-globe"> Social Media Links</i></a>
+  <a href="#"><i class="fa fa-credit-card"> Gift Card</i></a> 
+</div>
+<h1 class="titlee">The Yaar Joint</h1>
+<div class="parallax"></div>
+<h1 class="cursv">From mouth-watering treats to a 24/7 bar, we have it all</h1>
+<h1 class="cursv2">Our Star Offers</h1>
+<div class="splitleft2">
+	<div class="centered">
+	  <img src="https://www.jessicagavin.com/wp-content/uploads/2019/08/chicken-alfredo-8-1200.jpg" alt="Delicious Pasta">
+	  <h2>Death By Pasta</h2>
+	  <p>Eat Like a King</p>
+	</div>
+</div>
+<div class="splitright2">
+	<div class="centered">
+	  <img src="https://wset.azureedge.net/umbracomedia-cache/3/a/e/f/4/5/3aef4552353172595781c6d91ad56241fb5ae7e8.jpg" alt="Drinks Gallore">
+	  <h2>CALL ME A TAXI!!!</h2>
+	  <p>Drink like there's no Tomorrow</p>
+	</div>
+</div>
+<div class="splitmid2">
+	<div class="centered">
+	  <img src="https://nationaltoday.com/wp-content/uploads/2019/02/national-pizza-day.jpg" alt="Drinks Gallore">
+    <h2>True Love</h2>
+    <p>Customise your own pizza with sizes upto 30"</p>
+	</div>
+</div>
+<h1 class="titlee2">Presenting Our Newest Addition....</h1>
+<h1 class="titlee3">Chhichhora Hookha Lounge!</h1>
+<div class="parallax2"></div>
+<h1 class="cursv2">With exciting flavours such as</h1>
+<div class="splitleft2">
+	<div class="centered">
+	  <img src="https://smhttp-ssl-83739.nexcesscdn.net/pub/media/product/127633a/lemon-mint.png" alt="Delicious Pasta">
+	  <h2>Lemony Mint</h2>
+	  
+	</div>
+</div>
+<div class="splitright2">
+	<div class="centered">
+	  <img src="pngguru.png" alt="Drinks Gallore">
+    <h2>Green Apple</h2>
+	</div>
+</div>
+<div class="splitmid2">
+	<div class="centered">
+	  <img src="pngguru.com.png" alt="Drinks Gallore">
+    <h2>Godfather</h2>
+    
+	</div>
+</div>
+<h1 class="titlee2">Also, a few of our top rated dishes...</h1>
+<div class="baak">
+<div class="container">
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="FOOD1.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Grilled Steak</h3>
+          <p>😋even Gordan Ramsay approves😋</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="FOOD2.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Salted Prawns</h3>
+          <p>Freshly caught in the aquarium</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="FOOD3.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Grilled chicken burger</h3>
+          <p>A burger by the people, for the people!!!</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<h1 class="titlee2">Celebrate your birthday with us...</h1>
+<h1 class="titlee3">and get a <b>10% discount</b> on the entire bill!!!</h1>
+<h1 class="cursv2">Now that's how you celebrate a birthday!!!</h1>
+<div class="parallax3"></div>
+<h1 class="titlee2">We know nothing beats the comfort of home</h1>
+<h1 class="titlee3">Get Home Delivery Now!!!</h1>
+<h1 class="cursv2">We Promise that your Food will be.....</h1>
+<div class="splitleft2">
+	<div class="centered">
+	  <div class="container1">
+      <img src="https://i.pinimg.com/originals/6c/a0/0a/6ca00a8507dca325b12fc7204a664497.gif" alt="Avatar" class="image" style="width:200%">
+      <div class="middle">
+        <div class="text">Order Now</div>
+      </div>
+    </div>
+	  <h2>...as hot as the chilly pepper you regret...</h2>
+	  
+	</div>
+</div>
+<div class="splitright2">
+	<div class="centered">
+	  <div class="container1">
+      <img src="https://media.gq.com/photos/596e247d75d2965381f8bde6/16:9/w_2560%2Cc_limit/gq-food-scent.gif" alt="Avatar" class="image" style="width:200%">
+      <div class="middle">
+        <div class="text">Order Now</div>
+      </div>
+    </div>
+    <h2>...and as tasty as Mc'D drivethrough!!!</h2>
+	</div>
+</div>
+<div class="splitmid2">
+	<div class="centered">
+	  <div class="container1">
+      <img src="https://cdn.dribbble.com/users/1306406/screenshots/6638223/google_feature.gif" alt="Avatar" class="image" style="width:200%">
+      <div class="middle">
+        <div class="text">Order Now</div>
+      </div>
+    </div>
+    <h2>...delivered as fast as flash...</h2>
+    
+	</div>
+</div>
+<h1 class="titlee">The Yaar Joint</h1>
+<h1 class="cursv">A place where yaars can truly express their yaariyan</h1>
+<h1 class="titlee4">(ADDRESS)Ph.1234567890</h1>
+<div class="icon-bar">
+  <a href="#"><i class="fa fa-google"> </i></a> 
+  <a href="#"><i class="fa fa-facebook"></i></a> 
+  <a href="#"><i class="fa fa-twitter"></i></a> 
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-map-marker"></i></a> 
+</div>
+</body>
+</html> 
